@@ -84,8 +84,8 @@ def write_nfo(info: MovieInfo, nfo_file):
         # 部分影片有系列。set字段支持overview作为介绍，但是目前没发现有地方可以获取到系列的介绍
         nfo.append(E.set(E.name(info.serial)))
 
-    if info.director:
-        nfo.append(E.director(info.director))
+    #if info.director:
+    #    nfo.append(E.director(info.director))
 
     # 发行日期。文档中关于'year'字段的说明: Do not use. Use <premiered> instead
     if info.publish_date:
